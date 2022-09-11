@@ -7,3 +7,7 @@ Comments:
     <%= link_to comment.user.username, user_path(comment.user) %> said
     <%= comment.content %>
   <% end %>
+
+  <% @post.users.each do |user| %>
+    <p><%user.username%></p>
+  <% end %>
